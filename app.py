@@ -136,8 +136,6 @@ if uploaded_file is not None:
     # Convert index and values to appropriate types
     days = weekly_timeline.index.astype(str).tolist()
     counts = weekly_timeline.values.astype(int).tolist()
-
-    # Plotting the data
     fig, ax = plt.subplots()
     ax.bar(days, counts)
 
